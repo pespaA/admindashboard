@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9cbd387482.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkBox.css">
+    <title>AdminDashboard</title>
+</head>
+<body>
+    <div class="sidebar ">
+        <div class="top flex-row justify-content-spaceBet p-1 mt-1">
+            <div class="logo">
+                <i class="fa-solid fa-chart-simple color-bamby"></i>
+                <span>Dashdark X</span>
+            </div>
+            <a href="#" id="btn">
+                <i class="fa-solid fa-angle-left font-small color-hide"></i>
+                <i class="fa-solid fa-angle-right font-small color-hide"></i>
+            </a>
+        </div>
+        <div class="search mt-3 ">
+            <input class="input" type="text" placeholder="Search for..." id="search" name="search">
+        </div>
+        <ul>
+            <li>
+                <div class="dropdown" data-open="true">
+                    <label class="flex-row justify-content-spaceBet curPoin" for="touch">
+                        <span class="dropdown_head color-hide">
+                            <i class="fa-solid fa-house"></i>
+                            Dashboard</span>
+                        <div class="">
+                            <i class="fa-solid fa-chevron-down pr-2 font-small color-hide "></i>
+                        </div>
+                    </label>
+                    <input type="checkbox" id="touch">
+                    <ul class="slide">
+                        <li><a class="" href="index.html">All pages</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Task</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <label class="flex-row justify-content-spaceBet curPoin">
+                        <span class="dropdown_head color-hide">
+                            <i class="fa-solid fa-star"></i>
+                            Features</span>
+                            <i class="fa-solid fa-chevron-down pr-2 font-small color-hide rotate"></i>
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <label class="flex-row justify-content-spaceBet curPoin">
+                        <span class="dropdown_head color-bamby">
+                            <i class="fa-solid fa-user"></i>
+                            Users</span>
+                            <i class="fa-solid fa-chevron-down pr-2 font-small color-hide rotate"></i>
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <label class="flex-row justify-content-spaceBet curPoin">
+                        <span class="dropdown_head color-hide">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            Pricing</span>
+                            <i class="fa-solid fa-chevron-down pr-2 font-small color-hide rotate"></i>
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <label class="flex-row justify-content-spaceBet curPoin">
+                        <span class="dropdown_head color-hide">
+                            <i class="fa-solid fa-puzzle-piece"></i>
+                            Integrations</span>
+                            <i class="fa-solid fa-chevron-down pr-2 font-small color-hide rotate"></i>
+                    </label>
+                </div>
+            </li>
+            <hr>
+            <li>
+                <div class="dropdown">
+                    <label class="flex-row justify-content-spaceBet curPoin">
+                        <span class="dropdown_head color-hide">
+                            <i class="fa-solid fa-gear"></i>
+                            Settings</span>
+                            <i class="fa-solid fa-chevron-down pr-2 font-small color-hide rotate"></i>
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <label class="flex-row justify-content-spaceBet curPoin">
+                        <span class="dropdown_head color-hide">
+                            <i class="fa-brands fa-webflow"></i>
+                            Template pages</span>
+                            <i class="fa-solid fa-chevron-down pr-2 font-small color-hide rotate"></i>
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="flex-row justify-content-spaceBet">
+                    <div class="flex-row">
+                        <img class="pr-1" src="img/Avatars.png">
+                        <div class="text-ali-left">
+                            <p class="">john carter</p>
+                            <p class="color-hide mt-55">Account settings</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-down pr-2 font-small color-hide rotate curPoin"></i>
+                </div>
+            </li>
+        </ul>
+        <button class="mt-3 py-2 bg-bamby2 color-white button w-100" type="button">Get template <i class="fa-solid fa-arrow-right"></i></button>
+
+    </div>
+    <div class="main-content">
+        <div class="head flex-row justify-content-spaceBet">
+            <div class="flex-row gap-2">
+                <h2>Users</h2>
+                <div class="search">
+                    <input class="input" type="text" placeholder="Search for..." id="search" name="search">
+                </div>
+            </div>
+            <button class="bg-bamby color-white button px-2" type="button">Add user</button>
+        </div>
+        <div class="boxs mt-3">
+            <!-- box 1 -->
+            <div class="box">
+                <div class="box-head flex-row justify-content-spaceAro">
+                    <div class="flex-row gap-1">
+                        <i class="fa-solid fa-user-group color-bamby bg-bambyDark "></i>
+                        <div class="">
+                            <h1 class="">Total Users</h1>
+                            <h6 class="color-hide mt-55">250</h6>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+            </div>
+            <!-- box 2 -->
+            <div class="box">
+                <div class="box-head flex-row justify-content-spaceAro">
+                    <div class="flex-row gap-1">
+                        <i class="fa-solid fa-user color-yellow bg-yellowDark "></i>
+                        <div class="">
+                            <h1 class="">New Users</h1>
+                            <h6 class="color-hide mt-55">15</h6>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+            </div>
+            <!-- box 3 -->
+            <div class="box">
+                <div class="box-head flex-row justify-content-spaceAro">
+                    <div class="flex-row gap-1">
+                        <i class="fa-solid fa-heart color-green bg-greenDark "></i>
+                        <div class="">
+                            <h1 class="">Top Users</h1>
+                            <h6 class="color-hide mt-55">200</h6>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+            </div>
+            <!-- box 3 -->
+            <div class="box">
+                <div class="box-head flex-row justify-content-spaceAro">
+                    <div class="flex-row gap-1">
+                        <i class="fa-solid fa-registered color-blue bg-blueDark "></i>
+                        <div class="">
+                            <h1 class="">Other Users</h1>
+                            <h6 class="color-hide mt-55">35</h6>
+                        </div>
+                    </div>
+                    <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- table -->
+        <div class="mt-3">
+            <div class="table">
+                <div class="box-head flex-row justify-content-spaceBet p-2">
+                    <h3 class="">All Users</h3>
+                    <p><span class="color-bamby">1-10</span> of 256</p>
+                </div>
+                <table style="width:100%" class="mt-1 ">
+                    <!-- head -->
+                    <tr>
+                        <th style="width:1%">
+                            <label class="label-check">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark Line"></span>
+                            </label>
+                        </th>
+                        <th style="width:16.5%">
+                            <div class="flex-row gap-55 ml-1">
+                                <i class="fa-solid fa-user color-hide"></i>Name
+                                <div class="flex-col">
+                                    <i class="fa-solid fa-angle-up font-small color-hide"></i>
+                                    <i class="fa-solid fa-angle-down font-small color-hide"></i>
+                                </div>
+                            </div>
+                        </th>
+                        <th style="width:16.5%">
+                            <div class="flex-row gap-55 ml-1">
+                                <i class="fa-solid fa-phone color-hide"></i>Phone
+                                <div class="flex-col">
+                                    <i class="fa-solid fa-angle-up font-small color-hide"></i>
+                                    <i class="fa-solid fa-angle-down font-small color-hide"></i>
+                                </div>
+                            </div>
+                        </th>
+                        <th style="width:16.5%">
+                            <div class="flex-row gap-55 ml-1">
+                                <i class="fa-solid fa-location-dot color-hide"></i>location
+                                <div class="flex-col">
+                                    <i class="fa-solid fa-angle-up font-small color-hide"></i>
+                                    <i class="fa-solid fa-angle-down font-small color-hide"></i>
+                                </div>
+                            </div>
+                        </th>
+                        <th style="width:16.5%">
+                            <div class="flex-row gap-55 ml-1">
+                                <i class="fa-solid fa-bag-shopping color-hide"></i>Company
+                                <div class="flex-col">
+                                    <i class="fa-solid fa-angle-up font-small color-hide"></i>
+                                    <i class="fa-solid fa-angle-down font-small color-hide"></i>
+                                </div>
+                            </div>
+                        </th>
+                        <th style="width:16.5%">
+                            <div class="flex-row gap-55 ml-1">
+                                <i class="fa-solid fa-square-check color-hide"></i>Status
+                                <div class="flex-col">
+                                    <i class="fa-solid fa-angle-up font-small color-hide"></i>
+                                    <i class="fa-solid fa-angle-down font-small color-hide"></i>
+                                </div>
+                            </div>
+                        </th>
+                        
+                    </tr>
+                    <!-- data 1-->
+                    <tr>
+                        <td>
+                            <label class="label-check">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="flex-row">
+                                <img class="pr-1" src="img/Avatars.png">
+                                <div class="text-ali-left">
+                                    <p class="font-small">john carter</p>
+                                    <p class="font-small color-hide mt-55">contact@sophiemoore.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">(414)907-1274</p>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">United States</p>
+                        </td>
+                        <td>
+                            <p class="color-hide"><i class="fa-brands fa-google pr-1"></i>Google</p>
+                        </td>
+                        <td><div class="online flex-row"><div></div></div></td>
+                        <td>
+                            <a href=""><i class="fa-solid fa-pen mr-1 color-hide"></i></a>
+                            <a href=""><i class="fa-solid fa-trash color-hide"></i></a>
+                        </td>
+                    </tr>
+                        <!-- data 2-->
+                    <tr>
+                        <td>
+                            <label class="label-check">
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="flex-row">
+                                <img class="pr-1" src="img/Avatars.png">
+                                <div class="text-ali-left">
+                                    <p class="font-small">john carter</p>
+                                    <p class="font-small color-hide mt-55">contact@sophiemoore.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">(414)907-1274</p>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">United States</p>
+                        </td>
+                        <td>
+                            <p class="color-hide"><i class="fa-brands fa-google pr-1"></i>Google</p>
+                        </td>
+                        <td><div class="offline flex-row"><div></div></div></td>
+                        <td>
+                            <a href=""><i class="fa-solid fa-pen mr-1 color-hide"></i></a>
+                            <a href=""><i class="fa-solid fa-trash color-hide"></i></a>
+                        </td>
+                    </tr>
+                    <!-- data 3-->
+                    <tr>
+                        <td>
+                            <label class="label-check">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="flex-row">
+                                <img class="pr-1" src="img/Avatars.png">
+                                <div class="text-ali-left">
+                                    <p class="font-small">john carter</p>
+                                    <p class="font-small color-hide mt-55">contact@sophiemoore.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">(414)907-1274</p>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">United States</p>
+                        </td>
+                        <td>
+                            <p class="color-hide"><i class="fa-brands fa-google pr-1"></i>Google</p>
+                        </td>
+                        <td><div class="online flex-row"><div></div></div></td>
+                        <td>
+                            <a href=""><i class="fa-solid fa-pen mr-1 color-hide"></i></a>
+                            <a href=""><i class="fa-solid fa-trash color-hide"></i></a>
+                        </td>
+                    </tr>
+                        <!-- data 4-->
+                    <tr>
+                        <td>
+                            <label class="label-check">
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="flex-row">
+                                <img class="pr-1" src="img/Avatars.png">
+                                <div class="text-ali-left">
+                                    <p class="font-small">john carter</p>
+                                    <p class="font-small color-hide mt-55">contact@sophiemoore.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">(414)907-1274</p>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">United States</p>
+                        </td>
+                        <td>
+                            <p class="color-hide"><i class="fa-brands fa-google pr-1"></i>Google</p>
+                        </td>
+                        <td><div class="offline flex-row"><div></div></div></td>
+                        <td>
+                            <a href=""><i class="fa-solid fa-pen mr-1 color-hide"></i></a>
+                            <a href=""><i class="fa-solid fa-trash color-hide"></i></a>
+                        </td>
+                    </tr>
+                    <!-- data 5-->
+                    <tr>
+                        <td>
+                            <label class="label-check">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="flex-row">
+                                <img class="pr-1" src="img/Avatars.png">
+                                <div class="text-ali-left">
+                                    <p class="font-small">john carter</p>
+                                    <p class="font-small color-hide mt-55">contact@sophiemoore.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">(414)907-1274</p>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">United States</p>
+                        </td>
+                        <td>
+                            <p class="color-hide"><i class="fa-brands fa-google pr-1"></i>Google</p>
+                        </td>
+                        <td><div class="online flex-row"><div></div></div></td>
+                        <td>
+                            <a href=""><i class="fa-solid fa-pen mr-1 color-hide"></i></a>
+                            <a href=""><i class="fa-solid fa-trash color-hide"></i></a>
+                        </td>
+                    </tr>
+                        <!-- data 6-->
+                    <tr>
+                        <td>
+                            <label class="label-check">
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="flex-row">
+                                <img class="pr-1" src="img/Avatars.png">
+                                <div class="text-ali-left">
+                                    <p class="font-small">john carter</p>
+                                    <p class="font-small color-hide mt-55">contact@sophiemoore.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">(414)907-1274</p>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">United States</p>
+                        </td>
+                        <td>
+                            <p class="color-hide"><i class="fa-brands fa-google pr-1"></i>Google</p>
+                        </td>
+                        <td><div class="offline flex-row"><div></div></div></td>
+                        <td>
+                            <a href=""><i class="fa-solid fa-pen mr-1 color-hide"></i></a>
+                            <a href=""><i class="fa-solid fa-trash color-hide"></i></a>
+                        </td>
+                    </tr>
+                    <!-- data 7-->
+                    <tr>
+                        <td>
+                            <label class="label-check">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="flex-row">
+                                <img class="pr-1" src="img/Avatars.png">
+                                <div class="text-ali-left">
+                                    <p class="font-small">john carter</p>
+                                    <p class="font-small color-hide mt-55">contact@sophiemoore.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">(414)907-1274</p>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">United States</p>
+                        </td>
+                        <td>
+                            <p class="color-hide"><i class="fa-brands fa-google pr-1"></i>Google</p>
+                        </td>
+                        <td><div class="online flex-row"><div></div></div></td>
+                        <td>
+                            <a href=""><i class="fa-solid fa-pen mr-1 color-hide"></i></a>
+                            <a href=""><i class="fa-solid fa-trash color-hide"></i></a>
+                        </td>
+                    </tr>
+                        <!-- data 8-->
+                    <tr>
+                        <td>
+                            <label class="label-check">
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="flex-row">
+                                <img class="pr-1" src="img/Avatars.png">
+                                <div class="text-ali-left">
+                                    <p class="font-small">john carter</p>
+                                    <p class="font-small color-hide mt-55">contact@sophiemoore.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">(414)907-1274</p>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">United States</p>
+                        </td>
+                        <td>
+                            <p class="color-hide"><i class="fa-brands fa-google pr-1"></i>Google</p>
+                        </td>
+                        <td><div class="offline flex-row"><div></div></div></td>
+                        <td>
+                            <a href=""><i class="fa-solid fa-pen mr-1 color-hide"></i></a>
+                            <a href=""><i class="fa-solid fa-trash color-hide"></i></a>
+                        </td>
+                    </tr>
+                    <!-- data 9-->
+                    <tr>
+                        <td>
+                            <label class="label-check">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="flex-row">
+                                <img class="pr-1" src="img/Avatars.png">
+                                <div class="text-ali-left">
+                                    <p class="font-small">john carter</p>
+                                    <p class="font-small color-hide mt-55">contact@sophiemoore.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">(414)907-1274</p>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">United States</p>
+                        </td>
+                        <td>
+                            <p class="color-hide"><i class="fa-brands fa-google pr-1"></i>Google</p>
+                        </td>
+                        <td><div class="online flex-row"><div></div></div></td>
+                        <td>
+                            <a href=""><i class="fa-solid fa-pen mr-1 color-hide"></i></a>
+                            <a href=""><i class="fa-solid fa-trash color-hide"></i></a>
+                        </td>
+                    </tr>
+                        <!-- data 10-->
+                    <tr>
+                        <td>
+                            <label class="label-check">
+                                <input type="checkbox" >
+                                <span class="checkmark"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <div class="flex-row">
+                                <img class="pr-1" src="img/Avatars.png">
+                                <div class="text-ali-left">
+                                    <p class="font-small">john carter</p>
+                                    <p class="font-small color-hide mt-55">contact@sophiemoore.com</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">(414)907-1274</p>
+                        </td>
+                        <td>
+                            <p class=" color-hide ">United States</p>
+                        </td>
+                        <td>
+                            <p class="color-hide"><i class="fa-brands fa-google pr-1"></i>Google</p>
+                        </td>
+                        <td><div class="offline flex-row"><div></div></div></td>
+                        <td>
+                            <a href=""><i class="fa-solid fa-pen mr-1 color-hide"></i></a>
+                            <a href=""><i class="fa-solid fa-trash color-hide"></i></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="flex-row justify-content-spaceBet mt-2">
+            <p>1-10 of 460</p>
+            <div class="flex-row gap-1">
+                <p class="color-hide">Rows per page:</p>
+                <button class="bg-fo7lay color-white button py-1 mr-3" type="button">10 <i class="fa-solid fa-chevron-down font-small color-hide"></i></button>
+                <div>
+                    <i class="fa-solid fa-arrow-left color-hide bg-fo7lay p-3"></i>
+                    <i class="fa-solid fa-arrow-right           bg-fo7lay p-3"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+ //   let btn = document.querySelector('#btn');
+ //   let sidebar = document.querySelector('.sidebar');
+
+ //   btn.onclick = function (){
+ //       sidebar.classList.toggle('active');
+ //   };
+
+    let dropdown = document.querySelector('.dropdown');
+    console.log(dropdown.dataset)
+
+</script>
+</html>
